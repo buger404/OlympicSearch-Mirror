@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 
 public class ResultCommandHandler implements CommandHandler
 {
-    private LocalDate startDate = LocalDate.of(2024, 7, 27);
-    private LocalDate endDate = LocalDate.of(2024, 8, 11);
+    private final static LocalDate startDate = LocalDate.of(2024, 7, 27);
+    private final static LocalDate endDate = LocalDate.of(2024, 8, 11);
 
     @Override
     public String getRoute()
@@ -19,6 +19,12 @@ public class ResultCommandHandler implements CommandHandler
 
     private LocalDate parseArgDate(String[] args)
     {
+        if (args[1].length() != 4)
+        {
+            System.out.println("输入的日期不正确：" + args[1]);
+            return null;
+        }
+
         String monthStr = args[1].substring(0, 2);
         String dayStr = args[1].substring(2, 4);
 
