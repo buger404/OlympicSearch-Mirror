@@ -55,15 +55,15 @@ public class OlympicSearch
 
                 if (!handlerMap.containsKey(route))
                 {
-                    output.append("Error\n");
+                    output.println("Error");
+                    output.println("-----");
                 }
                 else
                 {
                     handlerMap.get(route).process(output, arg);
                 }
-
-                output.append("-----\n");
             }
+            output.close();
         }
         catch (IOException e)
         {
