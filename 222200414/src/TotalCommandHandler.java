@@ -24,7 +24,7 @@ public class TotalCommandHandler implements CommandHandler
         for(MedalInfoModel.CountryMedalInfo countryMedalInfo : MedalInfoManager.info.countries)
         {
             if (lastInfo == null
-                    || countryMedalInfo.medalNumber.gold == lastInfo.medalNumber.gold
+                    || countryMedalInfo.medalNumber.gold != lastInfo.medalNumber.gold
                     || countryMedalInfo.medalNumber.silver != lastInfo.medalNumber.silver
                     || countryMedalInfo.medalNumber.bronze != lastInfo.medalNumber.bronze)
             {
