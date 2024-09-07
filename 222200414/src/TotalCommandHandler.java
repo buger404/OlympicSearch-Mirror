@@ -12,23 +12,21 @@ public class TotalCommandHandler implements CommandHandler
     @Override
     public void process(PrintWriter output, String[] args)
     {
-        int rank = 1, displayRank = 1;
+        MedalNumberComparator comparator = new MedalNumberComparator();
 
         MedalInfoManager.info.countries.sort
         (
-            (o2, o1) ->
+            (x, y) ->
             {
-                if (o1.medalNumber.gold != o2.medalNumber.gold)
-                    return o1.medalNumber.gold - o2.medalNumber.gold;
-
-                if (o1.medalNumber.silver != o2.medalNumber.silver)
-                    return o1.medalNumber.silver - o2.medalNumber.silver;
-
-                return o1.medalNumber.bronze - o2.medalNumber.bronze;
+                if (x.medalNumber.equals(y.medalNumber))
+                    return x.name.compareTo(y.name);
+                return comparator.compare(x.medalNumber, y.medalNumber);
             }
         );
 
         MedalInfoModel.CountryMedalInfo lastInfo = null;
+
+        int rank = 1, displayRank = 1;
 
         for(MedalInfoModel.CountryMedalInfo countryMedalInfo : MedalInfoManager.info.countries)
         {

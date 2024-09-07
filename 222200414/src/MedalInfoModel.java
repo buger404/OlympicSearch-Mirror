@@ -1,5 +1,4 @@
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
 import java.util.Vector;
 
 public class MedalInfoModel
@@ -10,12 +9,29 @@ public class MedalInfoModel
         public int silver;
         public int bronze;
         public int total;
+
+        @Override
+        public boolean equals(Object obj) {
+            if (!(obj instanceof MedalNumber))
+            {
+                return false;
+            }
+            MedalNumber that = (MedalNumber)obj;
+            return gold == that.gold && silver == that.silver && bronze == that.bronze;
+        }
     }
 
     public static class DateMedalInfo
     {
-        public Date date;
+        public LocalDate date;
         public MedalNumber medalNumber = new MedalNumber();
+    }
+
+    public static class DetachedCompetitorMedalInfo
+    {
+        public String name;
+        public String nationality;
+        public MedalNumber medalNumber;
     }
 
     public static class CompetitorMedalInfo

@@ -10,7 +10,7 @@ public class OlympicSearch
 {
     final static CommandHandler[] handlers =
     {
-        new TotalCommandHandler()
+        new TotalCommandHandler(), new ResultCommandHandler()
     };
     final static Map<String, CommandHandler> handlerMap = new HashMap<>();
 
