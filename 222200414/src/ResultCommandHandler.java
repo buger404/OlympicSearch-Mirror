@@ -17,6 +17,12 @@ public class ResultCommandHandler implements CommandHandler
         return "result";
     }
 
+    @Override
+    public int getRequiredArgCount()
+    {
+        return 1;
+    }
+
     private LocalDate parseArgDate(String[] args)
     {
         if (args[1].length() != 4)

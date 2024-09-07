@@ -10,6 +10,12 @@ public class TotalCommandHandler implements CommandHandler
     }
 
     @Override
+    public int getRequiredArgCount()
+    {
+        return 0;
+    }
+
+    @Override
     public void process(PrintWriter output, String[] args)
     {
         MedalNumberComparator comparator = new MedalNumberComparator();
