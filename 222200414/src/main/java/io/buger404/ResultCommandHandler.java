@@ -1,7 +1,10 @@
+package io.buger404;
+
+import lombok.val;
+
 import java.io.PrintWriter;
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.util.Vector;
 
 public class ResultCommandHandler implements CommandHandler
 {
@@ -90,14 +93,14 @@ public class ResultCommandHandler implements CommandHandler
             return;
         }
 
-        for(MedalInfoModel.CompetitorMedalInfo info : dateMedalInfo.competitors)
+        for(val info : dateMedalInfo.getCompetitors())
         {
-            output.println("winner:" + info.name);
-            output.println("nationality:" + info.nationality);
-            output.println("gold:" + info.medalNumber.gold);
-            output.println("silver:" + info.medalNumber.silver);
-            output.println("bronze:" + info.medalNumber.bronze);
-            output.println("total:" + info.medalNumber.total);
+            output.println("winner:" + info.getName());
+            output.println("nationality:" + info.getNationality());
+            output.println("gold:" + info.getMedalNumber().getGold());
+            output.println("silver:" + info.getMedalNumber().getSilver());
+            output.println("bronze:" + info.getMedalNumber().getBronze());
+            output.println("total:" + info.getMedalNumber().getTotal());
             output.println("-----");
         }
     }

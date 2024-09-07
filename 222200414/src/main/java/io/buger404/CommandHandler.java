@@ -1,3 +1,5 @@
+package io.buger404;
+
 import java.io.PrintWriter;
 
 public interface CommandHandler

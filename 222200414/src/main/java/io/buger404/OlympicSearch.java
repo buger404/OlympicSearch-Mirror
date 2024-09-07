@@ -1,3 +1,5 @@
+package io.buger404;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;

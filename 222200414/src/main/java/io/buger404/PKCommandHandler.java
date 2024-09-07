@@ -1,3 +1,5 @@
+package io.buger404;
+
 import java.io.PrintWriter;
 
 public class PKCommandHandler implements CommandHandler
@@ -23,11 +25,11 @@ public class PKCommandHandler implements CommandHandler
             MedalInfoModel.CountryMedalInfo country2 = MedalInfoUtils.getCountryInfo(args[2]);
             MedalInfoModel.EventMedalInfo event1 = MedalInfoUtils.getEventInfo(country1, args[3]);
             MedalInfoModel.EventMedalInfo event2 = MedalInfoUtils.getEventInfo(country2, args[3]);
-            output.println(country1.name + "VS" + country2.name + " " + args[3]);
-            output.println("gold:" + event1.medalNumber.gold + "/" + event2.medalNumber.gold);
-            output.println("silver:" + event1.medalNumber.silver + "/" + event2.medalNumber.silver);
-            output.println("bronze:" + event1.medalNumber.bronze + "/" + event2.medalNumber.bronze);
-            output.println("total:" + event1.medalNumber.total + "/" + event2.medalNumber.total);
+            output.println(country1.getName() + "VS" + country2.getName() + " " + args[3]);
+            output.println("gold:" + event1.getMedalNumber().getGold() + "/" + event2.getMedalNumber().getGold());
+            output.println("silver:" + event1.getMedalNumber().getSilver() + "/" + event2.getMedalNumber().getSilver());
+            output.println("bronze:" + event1.getMedalNumber().getBronze() + "/" + event2.getMedalNumber().getBronze());
+            output.println("total:" + event1.getMedalNumber().getTotal() + "/" + event2.getMedalNumber().getTotal());
             output.println("-----");
         }
         catch (Exception ex)

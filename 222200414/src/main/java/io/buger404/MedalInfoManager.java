@@ -1,35 +1,25 @@
+package io.buger404;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.Objects;
+import java.io.InputStream;
 
 public class MedalInfoManager
 {
-    public final static String dataPath = "data/paris2024.json";
+    public final static String dataPath = "paris2024.json";
     public static MedalInfoModel info;
     public static void Initialize()
     {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
 
-        File file = null;
+        InputStream inputStream = OlympicSearch.class.getClassLoader().getResourceAsStream(dataPath);
 
         try
         {
-            file = new File(Objects.requireNonNull(OlympicSearch.class.getResource(dataPath)).toURI());
-        }
-        catch (URISyntaxException e)
-        {
-            System.out.println("无法读取数据文件：" + e.getMessage());
-            throw new RuntimeException(e);
-        }
-
-        try
-        {
-            info = objectMapper.readValue(file, MedalInfoModel.class);
+            info = objectMapper.readValue(inputStream, MedalInfoModel.class);
         }
         catch (IOException e)
         {
