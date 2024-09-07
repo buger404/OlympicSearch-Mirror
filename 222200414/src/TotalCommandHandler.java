@@ -17,27 +17,14 @@ public class TotalCommandHandler implements CommandHandler
     @Override
     public void process(PrintWriter output, String[] args)
     {
-        MedalInfoModel.CountryMedalInfo lastInfo = null;
-
-        int rank = 1, displayRank = 1;
-
-        for(MedalInfoModel.CountryMedalInfo countryMedalInfo : MedalInfoManager.info.countries)
+        for(MedalInfoModel.RankedCountryMedalInfo info : MedalInfoUtils.getRankedCountryMedalInfo())
         {
-            if (lastInfo == null
-                    || countryMedalInfo.medalNumber.gold != lastInfo.medalNumber.gold
-                    || countryMedalInfo.medalNumber.silver != lastInfo.medalNumber.silver
-                    || countryMedalInfo.medalNumber.bronze != lastInfo.medalNumber.bronze)
-            {
-                displayRank = rank;
-            }
-            output.println("rank" + displayRank + ":" + countryMedalInfo.name);
-            output.println("gold:" + countryMedalInfo.medalNumber.gold);
-            output.println("silver:" + countryMedalInfo.medalNumber.silver);
-            output.println("bronze:" + countryMedalInfo.medalNumber.bronze);
-            output.println("total:" + countryMedalInfo.medalNumber.total);
+            output.println("rank" + info.rank + ":" + info.name);
+            output.println("gold:" + info.medalNumber.gold);
+            output.println("silver:" + info.medalNumber.silver);
+            output.println("bronze:" + info.medalNumber.bronze);
+            output.println("total:" + info.medalNumber.total);
             output.println("-----");
-            rank++;
-            lastInfo = countryMedalInfo;
         }
     }
 }

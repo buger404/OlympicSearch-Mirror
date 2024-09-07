@@ -40,6 +40,13 @@ public class MedalInfoModel
         public MedalNumber medalNumber;
     }
 
+    public static class RankedCountryMedalInfo
+    {
+        public String name;
+        public int rank;
+        public MedalNumber medalNumber;
+    }
+
     public static class CountryMedalInfo
     {
         public String name;

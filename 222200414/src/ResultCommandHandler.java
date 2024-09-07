@@ -80,11 +80,7 @@ public class ResultCommandHandler implements CommandHandler
             return;
         }
 
-        MedalInfoModel.DateMedalInfo dateMedalInfo =
-                MedalInfoManager.info.dates.stream()
-                                            .filter(x -> x.date.equals(date))
-                                            .findFirst()
-                                            .orElse(null);
+        MedalInfoModel.DateMedalInfo dateMedalInfo = MedalInfoUtils.getMedalInfoByDate(date);
 
         if (dateMedalInfo == null)
         {
