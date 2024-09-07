@@ -108,7 +108,7 @@ public class ResultCommandHandler implements CommandHandler
 
         if (date == null)
         {
-            output.println("Error");
+            output.println("N/A");
             output.println("-----");
             return;
         }
