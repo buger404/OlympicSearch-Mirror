@@ -24,21 +24,14 @@ public class MedalInfoModel
     public static class DateMedalInfo
     {
         public LocalDate date;
-        public MedalNumber medalNumber = new MedalNumber();
-    }
-
-    public static class DetachedCompetitorMedalInfo
-    {
-        public String name;
-        public String nationality;
-        public MedalNumber medalNumber;
+        public Vector<CompetitorMedalInfo> competitors = new Vector<>();
     }
 
     public static class CompetitorMedalInfo
     {
         public String name;
         public String nationality;
-        public Vector<DateMedalInfo> detail = new Vector<>();
+        public MedalNumber medalNumber;
     }
 
     public static class EventMedalInfo
@@ -55,5 +48,5 @@ public class MedalInfoModel
     }
 
     public Vector<CountryMedalInfo> countries = new Vector<>();
-    public Vector<CompetitorMedalInfo> competitors = new Vector<>();
+    public Vector<DateMedalInfo> dates = new Vector<>();
 }

@@ -68,72 +68,33 @@ public class ResultCommandHandler implements CommandHandler
         return date;
     }
 
-    private Vector<MedalInfoModel.DetachedCompetitorMedalInfo> getInfo(LocalDate date)
-    {
-        Vector<MedalInfoModel.DetachedCompetitorMedalInfo> infoVector = new Vector<>();
-
-        for (MedalInfoModel.CompetitorMedalInfo competitorMedalInfo : MedalInfoManager.info.competitors)
-        {
-            MedalInfoModel.DateMedalInfo dateMedalInfo = null;
-
-            for (MedalInfoModel.DateMedalInfo info : competitorMedalInfo.detail)
-            {
-                if (info.date.equals(date))
-                {
-                    dateMedalInfo = info;
-                    break;
-                }
-            }
-
-            if (dateMedalInfo == null)
-            {
-                continue;
-            }
-
-            MedalInfoModel.DetachedCompetitorMedalInfo info = new MedalInfoModel.DetachedCompetitorMedalInfo();
-            info.name = competitorMedalInfo.name;
-            info.nationality = competitorMedalInfo.nationality;
-            info.medalNumber = dateMedalInfo.medalNumber;
-
-            infoVector.add(info);
-        }
-
-        return infoVector;
-    }
-
     @Override
     public void process(PrintWriter output, String[] args)
     {
         LocalDate date = parseArgDate(args);
 
-        if (date == null)
+        if (date == null || date.isBefore(startDate) || date.isAfter(endDate))
         {
             output.println("N/A");
             output.println("-----");
             return;
         }
 
-        if (date.isBefore(startDate) || date.isAfter(endDate))
+        MedalInfoModel.DateMedalInfo dateMedalInfo =
+                MedalInfoManager.info.dates.stream()
+                                            .filter(x -> x.date.equals(date))
+                                            .findFirst()
+                                            .orElse(null);
+
+        if (dateMedalInfo == null)
         {
+            System.out.println("该日期没有任何比赛在进行");
             output.println("N/A");
             output.println("-----");
             return;
         }
 
-        Vector<MedalInfoModel.DetachedCompetitorMedalInfo> infoVector = getInfo(date);
-
-        MedalNumberComparator comparator = new MedalNumberComparator();
-        infoVector.sort
-        (
-            (x, y) ->
-            {
-                if (x.medalNumber.equals(y.medalNumber))
-                    return x.name.compareTo(y.name);
-                return comparator.compare(x.medalNumber, y.medalNumber);
-            }
-        );
-
-        for(MedalInfoModel.DetachedCompetitorMedalInfo info : infoVector)
+        for(MedalInfoModel.CompetitorMedalInfo info : dateMedalInfo.competitors)
         {
             output.println("winner:" + info.name);
             output.println("nationality:" + info.nationality);
