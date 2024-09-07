@@ -1,5 +1,4 @@
 import java.io.PrintWriter;
-import java.util.Comparator;
 
 public class TotalCommandHandler implements CommandHandler
 {
