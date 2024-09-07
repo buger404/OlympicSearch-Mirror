@@ -17,18 +17,6 @@ public class TotalCommandHandler implements CommandHandler
     @Override
     public void process(PrintWriter output, String[] args)
     {
-        MedalNumberComparator comparator = new MedalNumberComparator();
-
-        MedalInfoManager.info.countries.sort
-        (
-            (x, y) ->
-            {
-                if (x.medalNumber.equals(y.medalNumber))
-                    return x.name.compareTo(y.name);
-                return comparator.compare(x.medalNumber, y.medalNumber);
-            }
-        );
-
         MedalInfoModel.CountryMedalInfo lastInfo = null;
 
         int rank = 1, displayRank = 1;

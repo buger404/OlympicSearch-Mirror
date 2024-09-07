@@ -3601,35 +3601,6 @@
       ]
     },
     {
-      "name": "中国香港",
-      "medalNumber": {
-        "gold": 2,
-        "silver": 0,
-        "bronze": 2,
-        "total": 4
-      },
-      "events": [
-        {
-          "name": "击剑",
-          "medalNumber": {
-            "gold": 2,
-            "silver": 0,
-            "bronze": 0,
-            "total": 2
-          }
-        },
-        {
-          "name": "游泳",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 0,
-            "bronze": 2,
-            "total": 2
-          }
-        }
-      ]
-    },
-    {
       "name": "菲律宾",
       "medalNumber": {
         "gold": 2,
@@ -3653,6 +3624,35 @@
             "gold": 2,
             "silver": 0,
             "bronze": 0,
+            "total": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "中国香港",
+      "medalNumber": {
+        "gold": 2,
+        "silver": 0,
+        "bronze": 2,
+        "total": 4
+      },
+      "events": [
+        {
+          "name": "击剑",
+          "medalNumber": {
+            "gold": 2,
+            "silver": 0,
+            "bronze": 0,
+            "total": 2
+          }
+        },
+        {
+          "name": "游泳",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 0,
+            "bronze": 2,
             "total": 2
           }
         }
@@ -3930,26 +3930,6 @@
       ]
     },
     {
-      "name": "牙买加",
-      "medalNumber": {
-        "gold": 1,
-        "silver": 3,
-        "bronze": 2,
-        "total": 6
-      },
-      "events": [
-        {
-          "name": "田径",
-          "medalNumber": {
-            "gold": 1,
-            "silver": 3,
-            "bronze": 2,
-            "total": 6
-          }
-        }
-      ]
-    },
-    {
       "name": "南非",
       "medalNumber": {
         "gold": 1,
@@ -4039,6 +4019,26 @@
             "silver": 0,
             "bronze": 0,
             "total": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "牙买加",
+      "medalNumber": {
+        "gold": 1,
+        "silver": 3,
+        "bronze": 2,
+        "total": 6
+      },
+      "events": [
+        {
+          "name": "田径",
+          "medalNumber": {
+            "gold": 1,
+            "silver": 3,
+            "bronze": 2,
+            "total": 6
           }
         }
       ]
@@ -4404,35 +4404,6 @@
       ]
     },
     {
-      "name": "智利",
-      "medalNumber": {
-        "gold": 1,
-        "silver": 1,
-        "bronze": 0,
-        "total": 2
-      },
-      "events": [
-        {
-          "name": "射击",
-          "medalNumber": {
-            "gold": 1,
-            "silver": 0,
-            "bronze": 0,
-            "total": 1
-          }
-        },
-        {
-          "name": "摔跤",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 1,
-            "bronze": 0,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
       "name": "圣卢西亚",
       "medalNumber": {
         "gold": 1,
@@ -4473,6 +4444,35 @@
       ]
     },
     {
+      "name": "智利",
+      "medalNumber": {
+        "gold": 1,
+        "silver": 1,
+        "bronze": 0,
+        "total": 2
+      },
+      "events": [
+        {
+          "name": "射击",
+          "medalNumber": {
+            "gold": 1,
+            "silver": 0,
+            "bronze": 0,
+            "total": 1
+          }
+        },
+        {
+          "name": "摔跤",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 1,
+            "bronze": 0,
+            "total": 1
+          }
+        }
+      ]
+    },
+    {
       "name": "多米尼加",
       "medalNumber": {
         "gold": 1,
@@ -4497,26 +4497,6 @@
             "silver": 0,
             "bronze": 0,
             "total": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "危地马拉",
-      "medalNumber": {
-        "gold": 1,
-        "silver": 0,
-        "bronze": 1,
-        "total": 2
-      },
-      "events": [
-        {
-          "name": "射击",
-          "medalNumber": {
-            "gold": 1,
-            "silver": 0,
-            "bronze": 1,
-            "total": 2
           }
         }
       ]
@@ -4551,7 +4531,27 @@
       ]
     },
     {
-      "name": "多米尼克",
+      "name": "危地马拉",
+      "medalNumber": {
+        "gold": 1,
+        "silver": 0,
+        "bronze": 1,
+        "total": 2
+      },
+      "events": [
+        {
+          "name": "射击",
+          "medalNumber": {
+            "gold": 1,
+            "silver": 0,
+            "bronze": 1,
+            "total": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "巴基斯坦",
       "medalNumber": {
         "gold": 1,
         "silver": 0,
@@ -4571,7 +4571,7 @@
       ]
     },
     {
-      "name": "巴基斯坦",
+      "name": "多米尼克",
       "medalNumber": {
         "gold": 1,
         "silver": 0,
@@ -4694,44 +4694,6 @@
       ]
     },
     {
-      "name": "亚美尼亚",
-      "medalNumber": {
-        "gold": 0,
-        "silver": 3,
-        "bronze": 1,
-        "total": 4
-      },
-      "events": [
-        {
-          "name": "举重",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 1,
-            "bronze": 0,
-            "total": 1
-          }
-        },
-        {
-          "name": "摔跤",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 1,
-            "bronze": 1,
-            "total": 2
-          }
-        },
-        {
-          "name": "竞技体操",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 1,
-            "bronze": 0,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
       "name": "哥伦比亚",
       "medalNumber": {
         "gold": 0,
@@ -4770,16 +4732,16 @@
       ]
     },
     {
-      "name": "吉尔吉斯斯坦",
+      "name": "亚美尼亚",
       "medalNumber": {
         "gold": 0,
-        "silver": 2,
-        "bronze": 4,
-        "total": 6
+        "silver": 3,
+        "bronze": 1,
+        "total": 4
       },
       "events": [
         {
-          "name": "拳击",
+          "name": "举重",
           "medalNumber": {
             "gold": 0,
             "silver": 1,
@@ -4792,8 +4754,17 @@
           "medalNumber": {
             "gold": 0,
             "silver": 1,
-            "bronze": 4,
-            "total": 5
+            "bronze": 1,
+            "total": 2
+          }
+        },
+        {
+          "name": "竞技体操",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 1,
+            "bronze": 0,
+            "total": 1
           }
         }
       ]
@@ -4841,6 +4812,35 @@
             "silver": 1,
             "bronze": 1,
             "total": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "吉尔吉斯斯坦",
+      "medalNumber": {
+        "gold": 0,
+        "silver": 2,
+        "bronze": 4,
+        "total": 6
+      },
+      "events": [
+        {
+          "name": "拳击",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 1,
+            "bronze": 0,
+            "total": 1
+          }
+        },
+        {
+          "name": "摔跤",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 1,
+            "bronze": 4,
+            "total": 5
           }
         }
       ]
@@ -4998,7 +4998,7 @@
       ]
     },
     {
-      "name": "塞浦路斯",
+      "name": "巴拿马",
       "medalNumber": {
         "gold": 0,
         "silver": 1,
@@ -5007,7 +5007,7 @@
       },
       "events": [
         {
-          "name": "帆船",
+          "name": "拳击",
           "medalNumber": {
             "gold": 0,
             "silver": 1,
@@ -5038,26 +5038,6 @@
       ]
     },
     {
-      "name": "约旦",
-      "medalNumber": {
-        "gold": 0,
-        "silver": 1,
-        "bronze": 0,
-        "total": 1
-      },
-      "events": [
-        {
-          "name": "跆拳道",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 1,
-            "bronze": 0,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
       "name": "蒙古",
       "medalNumber": {
         "gold": 0,
@@ -5078,7 +5058,7 @@
       ]
     },
     {
-      "name": "巴拿马",
+      "name": "塞浦路斯",
       "medalNumber": {
         "gold": 0,
         "silver": 1,
@@ -5087,7 +5067,27 @@
       },
       "events": [
         {
-          "name": "拳击",
+          "name": "帆船",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 1,
+            "bronze": 0,
+            "total": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "约旦",
+      "medalNumber": {
+        "gold": 0,
+        "silver": 1,
+        "bronze": 0,
+        "total": 1
+      },
+      "events": [
+        {
+          "name": "跆拳道",
           "medalNumber": {
             "gold": 0,
             "silver": 1,
@@ -5147,6 +5147,35 @@
       ]
     },
     {
+      "name": "波多黎各",
+      "medalNumber": {
+        "gold": 0,
+        "silver": 0,
+        "bronze": 2,
+        "total": 2
+      },
+      "events": [
+        {
+          "name": "摔跤",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1
+          }
+        },
+        {
+          "name": "田径",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1
+          }
+        }
+      ]
+    },
+    {
       "name": "格林纳达",
       "medalNumber": {
         "gold": 0,
@@ -5187,23 +5216,54 @@
       ]
     },
     {
-      "name": "波多黎各",
+      "name": "奥林匹克难民代表团",
       "medalNumber": {
         "gold": 0,
         "silver": 0,
-        "bronze": 2,
-        "total": 2
+        "bronze": 1,
+        "total": 1
       },
       "events": [
         {
-          "name": "摔跤",
+          "name": "拳击",
           "medalNumber": {
             "gold": 0,
             "silver": 0,
             "bronze": 1,
             "total": 1
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "佛得角",
+      "medalNumber": {
+        "gold": 0,
+        "silver": 0,
+        "bronze": 1,
+        "total": 1
+      },
+      "events": [
+        {
+          "name": "拳击",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "卡塔尔",
+      "medalNumber": {
+        "gold": 0,
+        "silver": 0,
+        "bronze": 1,
+        "total": 1
+      },
+      "events": [
         {
           "name": "田径",
           "medalNumber": {
@@ -5236,87 +5296,7 @@
       ]
     },
     {
-      "name": "佛得角",
-      "medalNumber": {
-        "gold": 0,
-        "silver": 0,
-        "bronze": 1,
-        "total": 1
-      },
-      "events": [
-        {
-          "name": "拳击",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 0,
-            "bronze": 1,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "奥林匹克难民代表团",
-      "medalNumber": {
-        "gold": 0,
-        "silver": 0,
-        "bronze": 1,
-        "total": 1
-      },
-      "events": [
-        {
-          "name": "拳击",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 0,
-            "bronze": 1,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
       "name": "秘鲁",
-      "medalNumber": {
-        "gold": 0,
-        "silver": 0,
-        "bronze": 1,
-        "total": 1
-      },
-      "events": [
-        {
-          "name": "帆船",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 0,
-            "bronze": 1,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "卡塔尔",
-      "medalNumber": {
-        "gold": 0,
-        "silver": 0,
-        "bronze": 1,
-        "total": 1
-      },
-      "events": [
-        {
-          "name": "田径",
-          "medalNumber": {
-            "gold": 0,
-            "silver": 0,
-            "bronze": 1,
-            "total": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "新加坡",
       "medalNumber": {
         "gold": 0,
         "silver": 0,
@@ -5346,6 +5326,26 @@
       "events": [
         {
           "name": "皮划艇激流回旋",
+          "medalNumber": {
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "新加坡",
+      "medalNumber": {
+        "gold": 0,
+        "silver": 0,
+        "bronze": 1,
+        "total": 1
+      },
+      "events": [
+        {
+          "name": "帆船",
           "medalNumber": {
             "gold": 0,
             "silver": 0,
