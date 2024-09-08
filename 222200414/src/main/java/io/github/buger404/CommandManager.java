@@ -1,6 +1,7 @@
 package io.github.buger404;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -23,7 +24,7 @@ public class CommandManager
 
     public static void processCommandLine(String line, PrintWriter output)
     {
-        String[] arg = line.split(" ");
+        String[] arg = line.trim().split("\\s+");
         String route = arg[0];
 
         if (!handlerMap.containsKey(route))
