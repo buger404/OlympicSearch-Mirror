@@ -45,4 +45,8 @@ tasks{
     withType<JavaCompile>{
         options.encoding = "UTF-8"
     }
+
+    withType<JavaExec> {
+        defaultCharacterEncoding = "UTF-8"
+    }
 }
