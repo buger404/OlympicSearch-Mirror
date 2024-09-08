@@ -85,14 +85,6 @@ public class ResultCommandHandler implements CommandHandler
 
         MedalInfoModel.DateMedalInfo dateMedalInfo = MedalInfoUtils.getMedalInfoByDate(date);
 
-        if (dateMedalInfo == null)
-        {
-            System.out.println("该日期没有任何比赛在进行");
-            output.println("N/A");
-            output.println("-----");
-            return;
-        }
-
         for(val info : dateMedalInfo.getCompetitors())
         {
             output.println("winner:" + info.getName());

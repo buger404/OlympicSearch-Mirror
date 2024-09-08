@@ -8,18 +8,15 @@ import java.io.InputStream;
 
 public class MedalInfoManager
 {
-    public final static String dataPath = "paris2024.json";
     public static MedalInfoModel info;
-    public static void Initialize()
+    public static void initialize(InputStream dataStream)
     {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
 
-        InputStream inputStream = OlympicSearch.class.getClassLoader().getResourceAsStream(dataPath);
-
         try
         {
-            info = objectMapper.readValue(inputStream, MedalInfoModel.class);
+            info = objectMapper.readValue(dataStream, MedalInfoModel.class);
         }
         catch (IOException e)
         {
