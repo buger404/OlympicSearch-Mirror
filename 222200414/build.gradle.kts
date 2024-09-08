@@ -5,11 +5,11 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
-group = "io.buger404"
+group = "io.github.buger404"
 version = "1.0-SNAPSHOT"
 
 application {
-    mainClass.set("io.buger404.OlympicSearch")
+    mainClass.set("io.github.buger404.OlympicSearch")
 }
 
 repositories {
@@ -35,8 +35,8 @@ dependencies {
 
 tasks{
     test {
-    useJUnitPlatform()
-}
+        useJUnitPlatform()
+    }
 
     shadowJar {
 

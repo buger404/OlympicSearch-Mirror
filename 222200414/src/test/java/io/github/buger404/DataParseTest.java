@@ -1,4 +1,4 @@
-package io.buger404;
+package io.github.buger404;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

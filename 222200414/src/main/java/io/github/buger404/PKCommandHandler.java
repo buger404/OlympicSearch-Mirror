@@ -1,4 +1,4 @@
-package io.buger404;
+package io.github.buger404;
 
 import java.io.PrintWriter;
 

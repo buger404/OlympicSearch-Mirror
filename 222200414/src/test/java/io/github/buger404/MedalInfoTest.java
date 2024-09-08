@@ -1,7 +1,6 @@
-package io.buger404;
+package io.github.buger404;
 
 import lombok.val;
-import lombok.var;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

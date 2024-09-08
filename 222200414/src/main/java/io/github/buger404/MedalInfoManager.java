@@ -1,4 +1,4 @@
-package io.buger404;
+package io.github.buger404;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
