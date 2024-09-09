@@ -31,9 +31,7 @@ public class MedalInfoUtils
         for(MedalInfoModel.CountryMedalInfo countryMedalInfo : MedalInfoManager.info.getCountries())
         {
             if (lastInfo == null
-                    || countryMedalInfo.getMedalNumber().getGold() != lastInfo.getMedalNumber().getGold()
-                    || countryMedalInfo.getMedalNumber().getSilver() != lastInfo.getMedalNumber().getSilver()
-                    || countryMedalInfo.getMedalNumber().getBronze() != lastInfo.getMedalNumber().getBronze())
+                    || !countryMedalInfo.getMedalNumber().equals(lastInfo.getMedalNumber()))
             {
                 displayRank = rank;
             }
@@ -79,6 +77,14 @@ public class MedalInfoUtils
 
         if (info == null)
         {
+            if (MedalInfoManager.info.getEvents().stream().anyMatch(x -> x.equals(name)))
+            {
+                // 这个国家在这个项目没有获奖
+                info = new MedalInfoModel.EventMedalInfo();
+                info.setName(name);
+                info.setMedalNumber(new MedalInfoModel.MedalNumber());
+                return info;
+            }
             throw new RuntimeException("国家 " + country.getName() + " 未参与项目 " + name + "！");
         }
 

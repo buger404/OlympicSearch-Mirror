@@ -1,5 +1,6 @@
 package io.github.buger404;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.val;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,6 +15,14 @@ public class MedalInfoTest
         (
             OlympicSearch.class.getClassLoader().getResourceAsStream("paris2024.json")
         );
+    }
+
+    @Test
+    public void noMedalEventTest() throws Exception
+    {
+        val country = MedalInfoUtils.getCountryInfo("赞比亚");
+        val event = MedalInfoUtils.getEventInfo(country, "网球");
+        Assertions.assertEquals(event.getMedalNumber(), new MedalInfoModel.MedalNumber());
     }
 
     @Test

@@ -58,4 +58,5 @@ public class MedalInfoModel
 
     private List<CountryMedalInfo> countries = new ArrayList<>();
     private List<DateMedalInfo> dates = new ArrayList<>();
+    private List<String> events = new ArrayList<>();
 }
